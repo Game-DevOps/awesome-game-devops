@@ -1,0 +1,40 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: check-yaml
+  - id: end-of-file-fixer
+  - id: trailing-whitespace
+  - id: fix-byte-order-marker
+  - id: check-merge-conflict
+  - id: check-added-large-files
+  - id: check-vcs-permalinks
+  - id: mixed-line-ending
+- repo: https://github.com/executablebooks/mdformat
+  rev: 0.7.16
+  hooks:
+  - id: mdformat
+    additional_dependencies:
+    - mdformat-gfm
+    - mdformat-tables
+    - mdformat-toc
+- repo: https://github.com/sirosen/texthooks
+  rev: 0.4.0
+  hooks:
+  - id: fix-smartquotes
+  - id: fix-ligatures
+  - id: fix-spaces
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: v2.4.0
+  hooks:
+  - id: pretty-format-yaml
+    args: [--autofix, --indent, '2']
+# - repo: https://github.com/oxsecurity/megalinter
+#   rev: v6.15.0 # Git tag specifying the hook, not mega-linter-runner, version
+#   hooks:
+#   - id: megalinter-incremental   # Faster, less thorough
+#     stages:
+#     - commit
+#   - id: megalinter-full   # Slower, more thorough
+#     stages:
+#     - push
