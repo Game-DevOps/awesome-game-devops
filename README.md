@@ -4,14 +4,13 @@
 
 ## Contents<a name="contents"></a>
 
-<!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=1 -->
+<!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=2 -->
 
-- [Awesome Game Devops](#awesome-game-devops)
-  - [Contents](#contents)
-  - [Section](#section)
-  - [Another Section](#another-section)
-    - [Subsection](#subsection)
-  - [Contribute](#contribute)
+- [Contents](#contents)
+- [Section](#section)
+- [Another Section](#another-section)
+  - [Subsection](#subsection)
+- [Contribute](#contribute)
 
 <!-- mdformat-toc end -->
 
